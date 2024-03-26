@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const ImmobilizationHeader = () => {
 
   return (
-    <header className='bg-green-700 py-6 w-full ' >
+    <header className='bg-green-700  w-full py-[50px] pb-[80px] ' >
       <div className="container h-full text-white">
       
         
@@ -31,7 +31,7 @@ export const ImmobilizationFooter = () => {
   };
 
   return (
-    <footer className='bg-green-700 py-10 w-full' onClick={handleClick}>
+    <footer className='bg-green-700 h-[140px] w-full' onClick={handleClick}>
       <div className='container text-white pt-[45px] block text-lg'>
         <div className="container mx-auto flex justify-between items-center">
             <span className="text-3xl text-white font-bold tracking-tight">

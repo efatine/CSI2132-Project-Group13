@@ -1,6 +1,7 @@
 import React, { useEffect, useState, startTransition } from "react";
 import { Pagination} from "antd";
 import HomeAside from "./components/HomeAsides";
+import Filter from "../../components/Filter";
 
 
 export default function Home() {
@@ -37,11 +38,10 @@ export default function Home() {
   };
   return (
     <div className="Home">
-      
-      <section className="container Homecontent">
+      <Filter changeFilter={handleFilterChange }/>
+      <section className="container Homecontent">  
         <HomeAside onChange={handleFilterChange} />
         <div className="hotel_list">
-          
           <Pagination
             className='mt-6'
             current={filter.page || 1}
