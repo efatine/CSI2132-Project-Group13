@@ -16,9 +16,9 @@ CHECK (
         employee_role = 'cleaner' OR
         employee_role = 'manager' OR 
 		employee_role = 'cook' OR 
-	employee_role = 'butler' OR 
-	employee_role = 'CSR' OR 
-	employee_role = 'concierge'  
+	    employee_role = 'butler' OR 
+	    employee_role = 'CSR' OR 
+	    employee_role = 'concierge'  
     );
 
 
