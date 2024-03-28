@@ -32,12 +32,10 @@ function renderRoutes(routes) {
 
 function RouterList() {
   return (
-    <Router>
-      <Routes>
-        {renderRoutes(List)}
-        <Route path='*' element={<Navigate to={'/'} />} />
-      </Routes>
-    </Router>
+    <Routes>
+    {renderRoutes(List)}
+    <Route path="*" element={<Navigate to={"/"} />} />
+  </Routes>
   );
 }
 

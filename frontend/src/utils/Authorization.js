@@ -21,5 +21,18 @@ export const setAuthorization = (authorization) => {
    * **/
   export const clearAuthorization = () => {
     localStorage.removeItem('authorization');
-  };
+};
   
+/**
+   * Set user info
+   * @returns
+   * **/
+export const setUserinfo = (data) => localStorage.setItem("userInfo",JSON.stringify(data));
+  
+
+/**
+   * get user info
+   * @returns
+   * **/
+
+export const getUserInfo = () => JSON.parse(localStorage.getItem("userInfo"));
